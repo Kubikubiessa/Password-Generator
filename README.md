@@ -33,18 +33,15 @@ THEN the password is either displayed in an alert or written to the page
 ## Mock-Up
 
 The following images show the web application's appearance and functionality:
-![showing initial prompt](/posts/password-generator/De![pw generator 1](https://user-images.githubusercontent.com/112738079/193729742-8615ab6c-a31b-42cb-b42e-efebc3641d71.png)
-velop/pw generator1.png("Initial prompt").
-![showing prompt](/posts/password-generator/Develop/pw generator2.png("Second prompt").![ pw generator 2](https://user-images.githubusercontent.com/112738079/193729865-f80e8373-71c0-41eb-8065-7aef81f7a3d2.png)
+ [pw generator 1](https://user-images.githubusercontent.com/112738079/193729742-8615ab6c-a31b-42cb-b42e-efebc3641d71.png)
+ [ pw generator 2](https://user-images.githubusercontent.com/112738079/193729865-f80e8373-71c0-41eb-8065-7aef81f7a3d2.png)
+ [pw generator 3](https://user-images.githubusercontent.com/112738079/193729902-ecb0c01a-bf65-4651-a32e-973d77967b69.png)
+ [pw generator 4](https://user-images.githubusercontent.com/112738079/193729932-80982a0d-41fb-4dcf-ac0e-dc8ca2499923.png)
+ [pw generator 5](https://user-images.githubusercontent.com/112738079/193729944-7c08e6e6-b551-4b97-a991-faf1cbba5e77.png)
+ [PW generator #6](https://user-images.githubusercontent.com/112738079/193729955-39e357d5-ef7d-4da3-96bd-67d16430febd.png)
 
-![showing prompt](/posts/password-g![pw generator 3](https://user-images.githubusercontent.com/112738079/193729902-ecb0c01a-bf65-4651-a32e-973d77967b69.png)
-enerator/Develop/pw generator3.png("Thi![pw generator 4](https://user-images.githubusercontent.com/112738079/193729932-80982a0d-41fb-4dcf-ac0e-dc8ca2499923.png)
-rd prompt").![pw generator 5](https://user-images.githubusercontent.com/112738079/193729944-7c08e6e6-b551-4b97-a991-faf1cbba5e77.png)![PW generator #6](https://user-images.githubusercontent.com/112738079/193729955-39e357d5-ef7d-4da3-96bd-67d16430febd.png)
 
-
-![showing prompt](/posts/password-generator/Develop/pw generator4.png("Fourth prompt").
-![showing prompt](/posts/password-generator/Develop/pw generator5.png("Fifth prompt").
-![showing prompt](/posts/password-generator/Develop/pw generator #6.png("Sixth prompt").
+ 
 ## Installation
 N/A
 
