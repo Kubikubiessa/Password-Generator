@@ -5,9 +5,9 @@
 var generateBtn = document.querySelector("#generate");
 //var characterTypes = '';
 function generatePassword() {
-  // this variable is left open, because the the selected random characters will be added to it at the end. 
+  // this variable is left open, because the the selected random characters will be added to it at the end.
   let generatedPassword = "";
-//code creating the prompts, including the parameters of choices. If input incorrect, the return will make the function start over so that the user can input correct date. 
+  //code creating the prompts, including the parameters of choices. If input incorrect, the return will make the function start over so that the user can input correct date.
   var input = window.prompt("Password length (8-128 characters): ");
   var passwordLength = parseInt(input);
   if (isNaN(passwordLength)) {
@@ -32,70 +32,72 @@ function generatePassword() {
     "Should your password include special characters?"
   );
 
-  //code for creating the selection of a random character of each character string when selected by user. 
-  function getRandomUpper() {
-    if (promptUpperCase === true) {
-      const upperCase = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
-      return upperCase[Math.floor(Math.random() * upperCase.length)];
-    }
-  }
+  //code for creating the selection of a random character of each character string when selected by user.
 
-  function getRandomLower() {
-    if (promptLowerCase === true) {
-      const lowerCase = "abcdefghijklmnopqrstuvwxyz";
-      return lowerCase[Math.floor(Math.random() * lowerCase.length)];
-    }
-  }
+  var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-  function getRandomNumbers() {
-    if (promptNumbers === true) {
-      const numbers = "0123456789";
-      return numbers[Math.floor(Math.random() * numbers.length)];
-    }
-  }
+  var lowerCase =  ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
-  function getRandomSymbols() {
-    if (promptSymbols === true) {
-      const symbols = '!"#%&()*,./:;?@^_ {}~¡¦§';
-      return symbols[Math.floor(Math.random() * symbols.length)];
-    }
-  }
+  var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+  var symbols = ["!", "#", "%", "&", "(", ")", "*", "/", ":", ";", "?", "@", "^", "_",  "{", "}", "~", "¡", "¦", "§"];
+
   // code for alert that informs user to at least choose one tup of characters if that didn't happen.
-  if (!promptUpperCase && !promptLowerCase && !promptNumbers && !promptSymbols) {alert("Need to choose at least one option.")
-    return generatePassword()
-}
-// creating an array out of all types of chosen and randomly picked character types in order to loop them according to the chosen password length. 
+  if (
+    !promptUpperCase &&
+    !promptLowerCase &&
+    !promptNumbers &&
+    !promptSymbols
+  ) {
+    alert("Need to choose at least one option.");
+    return generatePassword();
+  }
+
+  // creating an array out of all types of chosen and randomly picked character types in order to loop them according to the chosen password length.
   var randomFunctions = [];
-  if (promptUpperCase) {
-    randomFunctions.push(getRandomUpper);
-  };
-  if (promptLowerCase) {
-    randomFunctions.push(getRandomLower);
-  };
-  if (promptNumbers) {
-    randomFunctions.push(getRandomNumbers);
-  }if (promptSymbols) {
-    randomFunctions.push(getRandomSymbols);
-  };
+  var newPassword = [];
+  if (promptUpperCase === true) {
+    randomFunctions = randomFunctions.concat(upperCase);
+    //randomFunctions.push(upperCase);
+  }
+  if (promptLowerCase === true) {
+    randomFunctions = randomFunctions.concat(lowerCase);
+    //randomFunctions.push(lowerCase);
+  }
+  if (promptNumbers === true) {
+    randomFunctions = randomFunctions.concat(numbers);
+    //randomFunctions.push(numbers);
+  }
+  if (promptSymbols === true) {
+    randomFunctions = randomFunctions.concat(symbols);
+    //randomFunctions.push(symbols);
+  }
 
-//looping over the array of character types chosen in order to determine and generate the password:
+  //looping over the array of character types chosen in order to determine and generate the password:
 
-  for (let index = 0; index < passwordLength; index++) {
-      const randomFunction = randomFunctions[Math.floor(Math.random() * randomFunctions.length - 1)];
-      generatedPassword += randomFunction;
-    };
-    return generatedPassword;
-
+  for (let i = 0; i < passwordLength; i++) {
+    console.log(randomFunctions[Math.floor(Math.random() * randomFunctions.length - 1)])
+    newPassword.push(randomFunctions[Math.floor(Math.random() * randomFunctions.length - 1)]);
+  }
+  generatedPassword = newPassword.join("");
+  return generatedPassword;
 }
+/*function generatePassword() {
+    var length = 8,
+        charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+        retVal = "";
+    for (var i = 0, n = charset.length; i < length; ++i) {
+        retVal += charset.charAt(Math.floor(Math.random() * n));
+    }
+    return retVal;
+}*/
 
-//console.log(getRandomUpper);
 /* var globalVar = "Hello";
 // this is just a function that is immediately executed. this could be a for loop instead.
 (function() {  
   // Concat to globalVar;
   globalVar += " World";
 })();*/
- 
 
 //const finalPassword = generatedPassword.slice(0, length);
 
