@@ -5,14 +5,14 @@ In this project I wanted to practice coding an interactive interface with JavaSc
 
 ## User Story
 
-
+```
 AS AN employee with access to sensitive data
 I WANT to randomly generate a password that meets certain criteria
 SO THAT I can create a strong password that provides greater security
-
+```
 
 ## Acceptance Criteria
-
+```
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
 THEN I am presented with a series of prompts for password criteria
@@ -28,7 +28,7 @@ WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
- 
+```
 
 ## Mock-Up
 
@@ -46,7 +46,7 @@ The following images show the web application's appearance and functionality:
 N/A
 
 ## Usage
-I can use this challenge as a review for creating accessible and well-structured code. 
+I can use this challenge as a review for creating interactive interfaces for generating randome values based on the user's choice of components. 
 ## Credits
 N/A
 ## License
