@@ -38,6 +38,7 @@ The following images show the web application's appearance and functionality:
 ![showing prompt](/posts/password-generator/Develop/pw generator3.png("Third prompt").
 ![showing prompt](/posts/password-generator/Develop/pw generator4.png("Fourth prompt").
 ![showing prompt](/posts/password-generator/Develop/pw generator5.png("Fifth prompt").
+![showing prompt](/posts/password-generator/Develop/pw generator #6.png("Sixth prompt").
 ## Installation
 N/A
 
