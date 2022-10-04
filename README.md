@@ -33,7 +33,8 @@ THEN the password is either displayed in an alert or written to the page
 ## Mock-Up
 
 The following images show the web application's appearance and functionality:
-![showing initial prompt](/posts/password-generator/Develop/pw generator1.png("Initial prompt").
+![showing initial prompt](/posts/password-generator/De![pw generator 1](https://user-images.githubusercontent.com/112738079/193729742-8615ab6c-a31b-42cb-b42e-efebc3641d71.png)
+velop/pw generator1.png("Initial prompt").
 ![showing prompt](/posts/password-generator/Develop/pw generator2.png("Second prompt").
 ![showing prompt](/posts/password-generator/Develop/pw generator3.png("Third prompt").
 ![showing prompt](/posts/password-generator/Develop/pw generator4.png("Fourth prompt").
